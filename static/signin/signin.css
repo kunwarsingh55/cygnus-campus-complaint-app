@@ -1,0 +1,205 @@
+body {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -111;
+    background-image: url(Flat_colorful_background.jpg);
+}
+
+a i {
+    color: orange;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+/* Main div  */
+
+#main {
+    width: 350px;
+    height: auto;
+    margin: 10vh auto;
+    background-color: white;
+    border: 3px solid purple;
+    border-radius: 10px;
+    padding: 3rem 3rem 3rem 3rem;
+    overflow: hidden;
+}
+
+#main:hover {
+    box-shadow: 0 4px 8px 0 lightgray;
+}
+
+#box1 {
+    position: fixed;
+    margin-top: -15px;
+    margin-left: -15px;
+    height: 50px;
+    width: 50px;
+    border-left: 4px solid red;
+    border-top: 4px solid red;
+    transition: margin 0.5s;
+}
+
+#box2 {
+    z-index: 100;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border-bottom: 5px solid red;
+    border-right: 5px solid red;
+    margin-left: 320px;
+    margin-top: -90px;
+    transition: margin 0.5s;
+}
+
+
+/* Logo */
+
+#cygnus-logo {
+    height: 2em;
+    /* width: auto; */
+    position: relative;
+}
+
+
+/* Google logo */
+
+#google {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.g {
+    color: darkcyan;
+}
+
+.red {
+    color: red;
+}
+
+#o2 {
+    color: yellow;
+}
+
+#l {
+    color: green;
+}
+
+span {
+    margin-right: -10px;
+}
+
+
+/* Centrailising */
+
+.center {
+    text-align: center;
+}
+
+
+/* Sign in  */
+
+#signin {
+    position: relative;
+    /* margin-left: 10%; */
+    font-size: 1.5em;
+    font-weight: 500;
+    color: brown;
+    margin-bottom: -10px;
+}
+
+#googleacc {
+    margin-bottom: -10px;
+}
+
+
+/* Email entry box */
+
+fieldset {
+    margin-top: 25px;
+    border: lightgray solid 1px;
+    border-radius: 5px;
+    width: 330px;
+}
+
+input {
+    border: none;
+    width: 100%;
+}
+
+
+/* link */
+
+a {
+    text-decoration: none;
+    color: brown;
+    transition: all 2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* button */
+
+#next {
+    background-color: rgb(44, 14, 216);
+    padding: 5px 10px;
+    width: 4rem;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid black;
+}
+
+#next:hover {
+    border: 2px solid lightgray;
+}
+
+
+/* footer 2 */
+
+.footer2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot {
+    text-decoration: none;
+    text-decoration-color: gray;
+    font-size: small;
+}
+
+.margin-left {
+    margin-left: -20vw;
+}
+
+#loginsf {
+    font-size: xx-large;
+    color: green;
+}
+
+#recoverymailid {
+    font-size: medium;
+}
+
+#forgetlink,
+#createacclink {
+    width: fit-content;
+}
+
+#checkingpass {
+    color: red;
+    font-size: 15px;
+}

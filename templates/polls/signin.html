@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <title>Sign in</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'signin/signin.css' %}">
+    <script src="https://kit.fontawesome.com/5f937a8f1a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="home_link"><a href="{% url 'home' %}"><i class="fas fa-arrow-left fa-3x"></i></a></div>
+    <form method="post">
+        {% csrf_token %}
+        <div id="main">
+            <div id="box1"></div>
+            <div id="signinbox">
+
+                <!-- Google logo -->
+                <div id="google" class="center">
+                    <span class="g">C</span>
+                    <span class="g">y</span>
+                    <span class="g">g</span>
+                    <span class="g">n</span>
+                    <span class="g">u</span>
+                    <span class="g">s</span>
+                </div>
+                <br>
+                <!-- Sign in text -->
+                <div id="signin" class="center">Sign in</div>
+                <br>
+
+                <div id="googleacc" class="center">Use your Cygnus Account</div><br>
+                <!-- Input area -->
+                <div id="fieldset-Field">
+                    <fieldset id="fieldset1">
+                        <legend>Email</legend>
+                        <input type="email" id="emailvalue" class="myinput" name="email" placeholder="abc@example.com" required>
+
+                    </fieldset>
+
+                </div>
+                <div id="fieldset-Field2"></div>
+                <div id="checkingpass"></div>
+                <!-- Foget email link -->
+                <div id="forgetlink" class="forget"><a href="#">Forget Email ? </a></div>
+                <br>
+                <br>
+
+                <div id="subline">Not your computer? Use Guest mode to sign in privately</div>
+                <div class="link learnmore"><a href="https://support.google.com/chrome/answer/6130773?hl=en"> Learn more</a></div>
+                <br>
+                <br>
+                <!-- Create acc -->
+                <div class="footer">
+
+                    <div id="createacclink" class="link createacc "><a href="#">Create account</a></div>
+                    <input type="button" id="next" class="next_button" value="Next" onclick="signinbuttoncheck();">
+                </div>
+                <br>
+                <hr>
+
+
+                <div class="footer2">
+                    <div class="help foot"><a href="https://support.google.com/accounts?hl=en#topic=3382296">Help</a></div>
+                    <div class="privacy foot"><a href="https://policies.google.com/privacy?gl=IN&hl=en">Privacy</a></div>
+                    <div class="terms foot"><a href="https://policies.google.com/terms?gl=IN&hl=en">Terms</a></div>
+                </div>
+                <div id="box2"></div>
+
+            </div>
+
+        </div>
+    </form>
+
+
+    <script src="{% static 'signin/signin.js' %}"></script>
+
+</body>
+
+</html>

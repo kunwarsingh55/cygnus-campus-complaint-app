@@ -1,0 +1,18 @@
+<html>
+    {% if sbmitted %}
+        Your Complaint was Submitted Successfully
+    {% else %}
+        <form action="" method=POST enctype="multipart/form-data">
+            yooo
+            {% csrf_token %}
+            {{ form.as_table }}
+            
+            <input type="submit" value="Submit" >
+            
+        </form>
+
+
+    {% endif %}
+
+
+</html>
